@@ -1,0 +1,13 @@
+package org.jisu.e_comm_inventory_service;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class ECommInventoryServiceApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
