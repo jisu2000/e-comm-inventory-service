@@ -14,11 +14,8 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 @RestController
 public class TestController {
 
-    @Autowired
-    private AuthService authService;
-
-    @GetMapping("/user")
-    public ResponseEntity<?> getUserFromToken(@RequestHeader("Authorization") String authHeader) throws JsonMappingException, JsonProcessingException{
-        return new ResponseEntity<>(authService.getUserFromHeader(authHeader),HttpStatus.OK);
+    @GetMapping("/test")
+    public String test(){
+        return "Healthy";
     }
 }
